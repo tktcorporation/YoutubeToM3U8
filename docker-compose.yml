@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  app:
+    image: zenika/kotlin
+    working_dir: /work
+    volumes:
+      - .:/work:cached
+      - /work/app/build/
+      - /work/app/META-INF
